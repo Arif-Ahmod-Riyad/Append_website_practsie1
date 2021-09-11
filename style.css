@@ -1,0 +1,576 @@
+/* Google Fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Default start*/
+
+.default_button {
+  color: #fff;
+  position: relative;
+  right: 0px;
+  padding: 10px 19px;
+  background-color: #e84545;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.default_button:hover {
+  background-color: #f15e5e;
+  color: #fff;
+}
+.default_padding {
+  padding: 80px 0px;
+}
+.default_title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.default_p {
+  font-size: 16px;
+  color: gray;
+  line-height: 28px;
+}
+/* Default end */
+
+/******************* Header section******************/
+.container-fluid {
+  width: 97% !important;
+  margin: 0 auto;
+}
+header {
+  background-image: url(images/hero-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.2);
+  z-index: -1;
+}
+nav {
+  z-index: 99;
+}
+.nav_logo {
+  color: #fff !important;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+}
+.nav_menu li {
+  position: relative;
+  margin: 0px 5px;
+}
+.nav_menu li a {
+  color: #fff !important;
+  padding: 10px 10px !important;
+  font-size: 15px !important;
+}
+.nav_menu li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 175px;
+  background-color: #fff;
+  padding: 16px 2px;
+  transition: 0.2s;
+  transform: translateY(25px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 88;
+}
+.nav_menu li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.nav_menu li ul li {
+  margin: 6px 5px !important;
+}
+.nav_menu li ul li a {
+  color: #000 !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav_menu li ul li a:hover {
+  color: #e84545 !important;
+}
+.buttton_nav button {
+  background-color: #e84545;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.buttton_nav button:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid rgb(192, 192, 192);
+}
+
+/******* Banner section*******/
+
+.banner_text {
+  position: relative;
+  top: 18%;
+}
+.banner_text.default_button {
+  color: #fff;
+  position: relative;
+  right: -7px;
+  padding: 10px 19px;
+  background-color: #e84545;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.banner_text h1 {
+  font-size: 41px;
+  color: #fff;
+  font-weight: 700;
+}
+.banner_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+.banner_form input {
+  background: transparent;
+  border: none;
+  width: 75%;
+}
+.banner_form input:focus {
+  outline: none !important;
+}
+.banner_form {
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+}
+
+/******************* Slidersection******************/
+
+.slider_main {
+  position: relative;
+  transform: translateY(-75px) skewY(354deg);
+  z-index: 99;
+  background: #fff;
+}
+.slider_content {
+  transform: translateY(75px) skewY(-354deg);
+}
+
+/******************* Services section******************/
+
+.service_box_icon {
+  width: 75%;
+}
+.service_box_icon span {
+  font-size: 40px;
+  color: #e84545;
+}
+
+.service_box_content h4 {
+  font-size: 21px;
+  font-weight: 400;
+  padding: 5px 0px;
+}
+
+.service_box_content a {
+  text-decoration: none;
+  color: #e84545;
+  font-size: 16px;
+}
+
+/******************* Get Template section******************/
+
+.template_main {
+  background-image: url(images/img_v_3-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.template_main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.template_text h2 {
+  font-weight: 400;
+}
+
+/*******************The mountains word section 1******************/
+
+.default_title_word {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.mountain_content {
+  position: relative;
+}
+.first_images {
+  width: 76%;
+  position: relative;
+  right: -137px;
+}
+.second_image {
+  width: 75%;
+  height: 83%;
+  position: absolute;
+  top: 36%;
+  left: 3%;
+}
+
+/*******************The mountains word section 2******************/
+
+.third_image {
+  width: 90%;
+}
+
+/*******************Plans section******************/
+
+.plans_checked_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans_checked_box span {
+  color: #787878;
+  margin: 0px 10px;
+}
+.plans_checked_box input {
+  position: relative;
+  width: 105px;
+  height: 31px;
+  outline: none;
+  -webkit-appearance: none;
+  background: #c8c8c8;
+  border-radius: 20px;
+  box-shadow: inset 0 0 15px rgb(0, 0, 0, 0.2);
+}
+.plans_checked_box input::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgb(180, 180, 180);
+  transition: 0.3s;
+}
+.plans_checked_box input:checked::before {
+  left: 76px;
+}
+span.save_25 {
+  background: #e84545;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 20px;
+  margin-left: -2px;
+}
+
+.plans_single_box h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.plans_list_items {
+  padding: 0px 27px;
+  margin-bottom: 22px;
+}
+.plans_salary h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e84545;
+}
+.plans_salary span {
+  color: #727272;
+}
+.plans_items_icon {
+  margin-right: 10px;
+}
+.middle_box {
+  box-shadow: 0px 10px 20px 0px #ebebeb;
+}
+.middle_box h3 {
+  color: #e84545 !important;
+}
+
+/*******************Testimonial section******************/
+
+.testmonial_content {
+  box-shadow: 0px 9px 15px rgb(0 0 0 / 7%);
+}
+
+.member_images {
+  width: 18%;
+}
+.member_images img {
+  width: 95%;
+}
+
+.member_bio h4 {
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.member_bio h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+}
+.testmonial_content p {
+  font-size: 20px;
+  line-height: 37px;
+  padding-right: 20px;
+  padding-left: 0px;
+}
+
+.testimonial_toggle_button ul li {
+  display: inline-block;
+  margin-right: 11px;
+}
+.testimonial_toggle_button ul li a {
+  display: block;
+  padding: 7px 14px;
+  color: #000;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+.testimonial_toggle_button ul li a:hover {
+  border: 1px solid #000;
+}
+.testmonial_dotted {
+  margin-left: 80px;
+}
+
+.testmonial_dotted {
+  margin-left: 80px;
+}
+.testmonial_dotted ul li {
+  margin: 0px 3px !important;
+}
+.testmonial_dotted ul li a {
+  border: none !important;
+  padding: 0 !important;
+  font-size: 8px;
+  color: #b2b2b2 !important;
+}
+.testmonial_dotted ul li a .active {
+  color: #e84545 !important;
+}
+
+/*******************Our Blog Posts section******************/
+
+.blog_post_main {
+  background-color: #f8f9fa;
+}
+
+.single_blog_post {
+  transition: 0.3s;
+}
+.single_blog_post:hover {
+  box-shadow: 0px 0px 15px lightgrey;
+}
+.card-title a p {
+  margin-bottom: 8px;
+}
+.card-title a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+.card-title span {
+  color: #1e1e1e;
+}
+a.card_bottom_link {
+  text-decoration: none;
+  color: #e84545;
+}
+
+/*******************Get Template section 2******************/
+
+.template_second_section {
+  background-image: url(images/img_v_4-min.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+.template_second_section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/*******************Footer section ******************/
+.footer_left_content {
+  width: 61%;
+}
+.footer_heading {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.footer_social_side ul li {
+  display: inline-block;
+  margin-right: 9px;
+}
+.footer_social_side ul li a {
+  display: block;
+  padding: 11px 20px;
+  color: #000;
+  background: #f0f0f0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.footer_social_side ul li a:hover {
+  color: #e84545;
+}
+
+.footer_content_lists ul li {
+  margin-bottom: 11px;
+}
+.footer_content_lists ul li a {
+  color: #3a3a3a;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 0px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.footer_content_lists ul li a:hover {
+  color: #e84545;
+}
+
+/*Footer bottom*/
+.footer_bottom_text p a {
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+}
+
+/*******************Main css end ******************/
+
+/*******************Responsive design ******************/
+
+@media (max-width: 980px) {
+  /**** Banner section ****/
+  .banner_text h1 {
+    font-size: 39px;
+    font-weight: 600;
+    margin-bottom: 12px !important;
+  }
+  .banner_text {
+    width: 75% !important;
+    top: 10%;
+  }
+  .banner_text .default_button {
+    color: #fff;
+    position: relative;
+    right: -30px;
+    padding: 12px 19px;
+    background-color: #e84545;
+    transition: 0.3s;
+    border-radius: 6px;
+  }
+
+  /**** Services section ****/
+
+  .default_padding {
+    padding: 60px 0px;
+  }
+  .default_title {
+    font-size: 31px;
+  }
+  .service_box_icon {
+    margin-right: 10px;
+  }
+  .service_box_icon span {
+    font-size: 31px;
+  }
+  .service_box_content h4 {
+    font-size: 18px;
+  }
+  .default_p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .service_box_content a {
+    font-size: 14px;
+  }
+  /**** Get Template section ****/
+  .template_text h2 {
+    font-size: 29px;
+  }
+  .default_button {
+    padding: 7px 16px;
+    font-size: 14px;
+  }
+  .default_title_word {
+    font-size: 28px;
+  }
+
+  /**** The mountains section ****/
+  .third_image {
+    width: 89%;
+  }
+}
+@media (max-width: 958px) {
+  .service_box_icon {
+    width: 34%;
+  }
+}
+@media (max-width: 767px) {
+  .default_padding {
+    padding: 50px 0px;
+  }
+  .service_box_icon {
+    margin-right: 10px;
+  }
+  .banner_text .default_button {
+    right: -30px;
+    padding: 12px 19px;
+  }
+}
+@media (max-width: 951px) {
+  .banner_text .default_button {
+    right: -9px;
+    padding: 8px 12px;
+  }
+}
